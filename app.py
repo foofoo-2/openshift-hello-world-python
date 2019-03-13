@@ -13,7 +13,7 @@ def index():
             envs.append({"key": env, "value": os.getenv(env)})
 
     data['message'] = "Hello from OpenShift!"
-    data['branch'] = "develop"
+    data['branch'] = "master"
     data['envVars'] = envs
 
     return jsonify(data)
